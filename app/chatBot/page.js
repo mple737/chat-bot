@@ -6,10 +6,12 @@ import { useRouter } from 'next/navigation';
 
 export default function Home() {
 
-  
+
   const [history, setHistory] = useState([]);
   const firstMessage = "Hi there! I'm the Arsenal FC virtual assistant. How can I help you today?";
+
   const [message, setMessage] = useState("");
+  
   const endOfMessagesRef = useRef(null); // ref to scroll to
   const router = useRouter(); // Initialize the router
 
